@@ -38,7 +38,7 @@ Note that the online documentation is an "evergreen" document that is constantly
 ### Javadoc Reference Material
 The Javadoc reference documentation for the FTC SDK is now available online.  Click on the following link to view the FTC SDK Javadoc documentation as a live website:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FTC Javadoc Documentation](https://javadoc.io/doc/org.firstinspires.ftc)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[FTC Javadoc Documentation](https://javadoc.io/org.firstinspires.ftc)
 
 ### Online User Forum
 For technical questions regarding the Control System or the FTC SDK, please visit the FTC Technology forum:
@@ -54,6 +54,7 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
 
 # Release Information
 
+<<<<<<< HEAD
 ## Version 7.2 (20220723-130006)
 
 ### Breaking Changes
@@ -121,6 +122,8 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
 * Hides the "RC Password" item on the inspection screen for phone-based Robot Controllers. (It is only applicable for Control Hubs).
 * Adds channel 165 to Wi-Fi Direct channel selection menu in the settings screen. (165 was previously available through the web UI, but not locally in the app).
 
+=======
+>>>>>>> parent of e945da2 (Merge pull request #274 from FIRST-Tech-Challenge/20211223-120805-release-candidate)
 ## Version 7.0 (20210915-141025)
 
 ### Enhancements and New Features
@@ -148,6 +151,7 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
       * org.firstinspires.ftc.ftccommon.external.OnCreateMenu
       * org.firstinspires.ftc.ftccommon.external.OnDestroy
       * org.firstinspires.ftc.ftccommon.external.WebHandlerRegistrar
+<<<<<<< HEAD
 * Adds support for REV Robotics Driver Hub.
 * Adds fully custom userspace USB gamepad driver to Driver Station (see "Advanced Gamepad Features" menu in DS settings).
     * Allows gamepads to work on devices without native Linux kernel support (e.g. some Romanian Motorola devices).
@@ -164,6 +168,24 @@ The readme.md file located in the [/TeamCode/src/main/java/org/firstinspires/ftc
 * Updates samples located at [/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples](FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples).
     * Added ConceptGamepadRumble and ConceptGamepadTouchpad samples to illustrate the use of these new gampad capabilities.
     * Condensed existing Vuforia samples into just 2 samples (ConceptVuforiaFieldNavigation & ConceptVuforiaFieldNavigationWebcam) showing how to determine the robot's location on the field using Vuforia. These both use the current season's Target images.
+=======
+* Adds support for REV Robotics Driver Hub
+* Adds fully custom userspace USB gamepad driver to Driver Station (see "Advanced Gamepad Features" menu in DS settings)
+    * Allows gamepads to work on devices without native Linux kernel support (e.g. some Romanian Motorola devices)
+    * Allows the DS to read the unique serial number of each gamepad, enabling auto-recovery of dropped gamepads even if two gamepads of the same model drop. *(NOTE: unfortunately this does not apply to Etpark gamepads, because they do not have a unique serial)*
+    * Reading the unique serial number also provides the ability to configure the DS to assign gamepads to a certain position by default (so no need to do start+a/b at all)
+    * The LED ring on the Xbox360 gamepad and the RGB LED bar on the PS4 gamepad is used to indicate the driver position the gamepad is bound to
+    * The rumble motors on the Xbox360, PS4, and Etpark gamepads can be controlled from OpModes
+    * The 2-point touchpad on the PS4 gamepad can be read from OpModes
+    * The "back" and "guide" buttons on the gamepad can now be safely bound to robot controls (Previously, on many devices, Android would intercept these buttons as home button presses and close the app)
+    * Advanced Gamepad features are enabled by default, but may be disabled through the settings menu in order to revert to gamepad support provided natively by Android
+* Improves accuracy of ping measurement
+    * Fixes issue where the ping time showed as being higher than reality when initially connecting to or restarting the robot
+    * To see the full improvement, you must update both the Robot Controller and Driver Station apps
+* Updates samples located at [/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples](FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples)
+    * Added ConceptGamepadRumble and ConceptGamepadTouchpad samples to illustrtate the use of these new gampad capabilities.
+    * Condensed existing Vuforia samples into just 2 samples (ConceptVuforiaFieldNavigation & ConceptVuforiaFieldNavigationWebcam) showing how to determine the robot's location on the field using Vuforia. These both use the current season's Target images.  
+>>>>>>> parent of e945da2 (Merge pull request #274 from FIRST-Tech-Challenge/20211223-120805-release-candidate)
     * Added ConceptVuforiaDriveToTargetWebcam to illustrate an easy way to drive directly to any visible Vuforia target.
 * Makes many improvements to the warning system and individual warnings.
     * Warnings are now much more spaced out, so that they are easier to read.

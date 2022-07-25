@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
     android:versionCode="45"
           android:versionName="7.2">
+=======
+          package="com.qualcomm.ftcrobotcontroller"
+          android:versionCode="42"
+          android:versionName="7.0">
+>>>>>>> parent of e945da2 (Merge pull request #274 from FIRST-Tech-Challenge/20211223-120805-release-candidate)
 
   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
